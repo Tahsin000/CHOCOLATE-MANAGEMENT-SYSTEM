@@ -15,7 +15,7 @@ const AddChocolate = () => {
         const addChocolate = {name, country, category, photo};
         console.log(addChocolate);
         
-        fetch('https://my-app-server-1g5cvh6yh-tahsin000.vercel.app/chocolate', {
+        fetch('https://my-app-server-beta.vercel.app/chocolate', {
             method: 'POST',
             headers:{
               "Content-Type": "application/json",

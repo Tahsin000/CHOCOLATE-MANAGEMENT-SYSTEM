@@ -17,7 +17,7 @@ const UpdateChocolate = () => {
         const updateChocolate = {name, country, category, photo};
         console.log(updateChocolate);
         
-        fetch(`https://my-app-server-1g5cvh6yh-tahsin000.vercel.app/chocolate/${LoadedData._id}`, {
+        fetch(`https://my-app-server-beta.vercel.app/chocolate/${LoadedData._id}`, {
             method: 'PUT',
             headers:{
               "Content-Type": "application/json",

@@ -22,7 +22,7 @@ const HomeTableRow = ({chocolate, chocolates, setChocolates}) => {
                 'success'
               )
               console.log(_id);
-              fetch(`https://my-app-server-1g5cvh6yh-tahsin000.vercel.app/chocolate/${_id}`, {
+              fetch(`https://my-app-server-beta.vercel.app/chocolate/${_id}`, {
                 method:"DELETE"
               })
               .then(res => res.json())
@@ -42,9 +42,11 @@ const HomeTableRow = ({chocolate, chocolates, setChocolates}) => {
             <td>{name}</td>
             <td>{country}</td>
             <td>{category}</td>
-            <td className='flex gap-3'>
+            <td >
+              <p className='flex gap-3' >
                 <Link to={`/UpdateChocolate/${_id}`}> <i className='btn'> <FaEdit/> </i> </Link>
                 <i className='btn'  onClick={()=> handleDelete(_id)}> <FaTimes/> </i>
+              </p>
             </td>
         </tr>
     );
